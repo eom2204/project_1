@@ -1,0 +1,28 @@
+//fonts
+$font-primary:'Josefin Sans', sans-serif;
+$font-secondary: 'Aleo', serif;
+
+//colors
+$color-white: #FFFFFF;
+$color-blue: #5373FD;
+$color-gray: #333333;
+$color-black: #000000;
+$color-gray-background: rgba(35, 35, 35, 0.9);
+$color-grey-search: #999999;
+
+//width
+$max-content-width: 1320px;
+
+//breakpoints
+$extra-large: 1920px;
+$large-end: $extra-large - 1;
+$large-start: 1360px;
+$desktop-end: $large-start - 1;
+$desktop-start: 1024px;
+$tablet-end: $desktop-start - 1;
+$tablet-start: 768px;
+$mobile-end: $tablet-start - 1;
+$mobile-start: 576px;
+
+
+

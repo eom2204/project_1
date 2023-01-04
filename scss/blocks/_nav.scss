@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $tablet-start) {
+    margin: 32px auto 0;
+    max-width: 580px;
+  }
+
+  @media screen and (max-width: $mobile-start) {
+    display: none;
+  }
+
+
+  &__burger {
+    display: none;
+
+    @media screen and (max-width: $mobile-start) {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 40px;
+
+    &-link {
+      text-decoration: none;
+      color: $color-white;
+    }
+  }
+}
+

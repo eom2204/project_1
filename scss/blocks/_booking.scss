@@ -1,0 +1,78 @@
+.booking {
+  background-color: $color-gray-background;
+  font-family: $font-primary;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  max-width: 650px;
+  padding: 44px 32px;
+
+  @media screen and (max-width: $large-start) {
+    max-width: 558px;
+  }
+
+  @media screen and (max-width: $desktop-start) {
+    max-width: 550px;
+  }
+
+  @media screen and (max-width: $tablet-start) {
+    max-width: 720px;
+  }
+
+  &__picture {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px 300px 120px;
+
+    @media screen and (max-width: $large-start) {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+
+    @media screen and (max-width: $desktop-start) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    @media screen and (max-width: $tablet-start) {
+      padding: 120px 24px;
+    }
+
+    @media screen and (max-width: $mobile-start) {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    &--first {
+      background-image: url("../../images/render-1477041_1280 1.png");
+    }
+
+    &--second {
+      background-image: url("../../images/spain-1859434_1280 1.png");
+    }
+  }
+
+  &__block {
+
+    &--second {
+      margin-left: auto;
+    }
+  }
+
+  &__country {
+    letter-spacing: 0.1em;
+  }
+
+  &__title {
+    font-weight: 400;
+    margin: 16px 0;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+  }
+}

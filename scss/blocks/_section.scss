@@ -1,0 +1,116 @@
+.section {
+
+  &-why {
+    background-image: url("../../images/why_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    padding-left: 300px;
+
+    @media screen and (max-width: $large-end) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    @media screen and (max-width: $tablet-end) {
+      padding: 60px 24px;
+    }
+
+    @media screen and (max-width: $mobile-end) {
+      padding: 60px 18px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1210px;
+
+    @media screen and (max-width: $large-end) {
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: $large-start) {
+      max-width: 1140px;
+    }
+
+    @media screen and (max-width: $tablet-end) {
+      flex-direction: column-reverse;
+      max-width: 720px;
+    }
+  }
+
+  &__article {
+    max-width: 648px;
+
+    @media screen and (max-width: $tablet-end) {
+      max-width: 720px;
+      text-align: center;
+    }
+  }
+
+  &__photo {
+
+    @media screen and (max-width: $tablet-end) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: $mobile-start - 1) {
+      flex-wrap: wrap;
+    }
+
+    &-mountain {
+      margin-left: 75px;
+
+      @media screen and (max-width: $tablet-end) {
+        margin-left: 24px;
+      }
+    }
+
+    &-river {
+      margin-bottom: 16px;
+
+      @media screen and (max-width: $tablet-end) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 350px;
+
+    @media screen and (max-width: $tablet-end) {
+      max-width: 348px;
+      min-width: 258px;
+      height: auto;
+      width: 50%;
+    }
+  }
+
+  &__title {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 66px;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+
+    @media screen and (max-width: $tablet-end) {
+      margin-top: 35px;
+    }
+  }
+
+  &__desc {
+    font-family: $font-primary;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    margin-bottom: 32px;
+  }
+}

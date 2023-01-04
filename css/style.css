@@ -1,0 +1,635 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  box-sizing: border-box;
+  min-width: 320px;
+  color: #FFFFFF;
+}
+
+.header__banner {
+  background-image: url("../../images/header_background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 295px;
+  padding-bottom: 125px;
+}
+.header__content {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+}
+.header__scroll {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  margin-top: 210px;
+  margin-bottom: 8px;
+}
+.header__scroll-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.header__scroll-down {
+  display: block;
+  margin: 0 auto;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 32px 110px;
+}
+@media screen and (max-width: 1024px) {
+  .header__menu {
+    padding: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__menu {
+    max-width: 580px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header__menu {
+    flex-direction: row;
+    margin-right: 0;
+    max-width: 355px;
+  }
+}
+.header__menu-wrapper {
+  background-color: #5373FD;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 80px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    margin: 32px auto 0;
+    max-width: 580px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav {
+    display: none;
+  }
+}
+.nav__burger {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .nav__burger {
+    display: block;
+  }
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 40px;
+}
+.nav__list-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 275px;
+  margin: 0 auto;
+}
+.social__link {
+  text-decoration: none;
+}
+
+.section-why {
+  background-image: url("../../images/why_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  padding-left: 300px;
+}
+@media screen and (max-width: 1919px) {
+  .section-why {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .section-why {
+    padding: 60px 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-why {
+    padding: 60px 18px;
+  }
+}
+.section__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1210px;
+}
+@media screen and (max-width: 1919px) {
+  .section__wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .section__wrapper {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .section__wrapper {
+    flex-direction: column-reverse;
+    max-width: 720px;
+  }
+}
+.section__article {
+  max-width: 648px;
+}
+@media screen and (max-width: 1023px) {
+  .section__article {
+    max-width: 720px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .section__photo {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 575px) {
+  .section__photo {
+    flex-wrap: wrap;
+  }
+}
+.section__photo-mountain {
+  margin-left: 75px;
+}
+@media screen and (max-width: 1023px) {
+  .section__photo-mountain {
+    margin-left: 24px;
+  }
+}
+.section__photo-river {
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 1023px) {
+  .section__photo-river {
+    margin-bottom: 0;
+  }
+}
+.section__image {
+  display: block;
+  max-width: 350px;
+}
+@media screen and (max-width: 1023px) {
+  .section__image {
+    max-width: 348px;
+    min-width: 258px;
+    height: auto;
+    width: 50%;
+  }
+}
+.section__title {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 66px;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 1023px) {
+  .section__title {
+    margin-top: 35px;
+  }
+}
+.section__desc {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  margin-bottom: 32px;
+}
+
+.section__nav {
+  background-color: #333333;
+  padding: 110px 0 60px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section__nav {
+    padding-top: 60px;
+  }
+}
+.section__nav-wrapper {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1320px;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .section__nav-wrapper {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__nav-wrapper {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+.section__nav-figure--center::before {
+  content: "";
+  border-top: 1px dashed #FFFFFF;
+  border-radius: 50%;
+  height: 230px;
+  opacity: 0.5;
+  position: absolute;
+  left: 240px;
+  top: -55px;
+  width: 30%;
+}
+@media screen and (max-width: 1024px) {
+  .section__nav-figure--center::before {
+    left: 180px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__nav-figure--center::before {
+    display: none;
+  }
+}
+.section__nav-figure--center::after {
+  content: "";
+  border-top: 1px dashed #FFFFFF;
+  border-radius: 50%;
+  height: 230px;
+  opacity: 0.5;
+  position: absolute;
+  top: -55px;
+  right: 240px;
+  width: 30%;
+}
+@media screen and (max-width: 1024px) {
+  .section__nav-figure--center::after {
+    right: 180px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__nav-figure--center::after {
+    display: none;
+  }
+}
+.section__nav-icon {
+  display: block;
+  margin: 0 auto;
+}
+.section__nav-figcapture {
+  display: block;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 4px;
+  text-transform: capitalize;
+}
+
+.booking {
+  background-color: rgba(35, 35, 35, 0.9);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  max-width: 650px;
+  padding: 44px 32px;
+}
+@media screen and (max-width: 1360px) {
+  .booking {
+    max-width: 558px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .booking {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .booking {
+    max-width: 720px;
+  }
+}
+.booking__picture {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 220px 300px 120px;
+}
+@media screen and (max-width: 1360px) {
+  .booking__picture {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .booking__picture {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .booking__picture {
+    padding: 120px 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .booking__picture {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+.booking__picture--first {
+  background-image: url("../../images/render-1477041_1280 1.png");
+}
+.booking__picture--second {
+  background-image: url("../../images/spain-1859434_1280 1.png");
+}
+.booking__block--second {
+  margin-left: auto;
+}
+.booking__country {
+  letter-spacing: 0.1em;
+}
+.booking__title {
+  font-weight: 400;
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+.booking__desc {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+}
+
+.review {
+  background-image: url("../../images/BG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 180px;
+}
+@media screen and (max-width: 1024px) {
+  .review {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .review {
+    padding: 60px 24px 120px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .review {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+.review__title {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.review__block {
+  background-color: #333333;
+  display: flex;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1360px) {
+  .review__block {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .review__block {
+    flex-direction: column;
+    max-width: 720px;
+  }
+}
+.review__img {
+  display: block;
+  width: 33%;
+}
+@media screen and (max-width: 768px) {
+  .review__img {
+    max-width: 720px;
+    width: 100%;
+  }
+}
+.review__desc {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 28px;
+  padding: 48px 60px;
+}
+.review__desc--name {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.review__desc--text {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.button {
+  background-color: #5373FD;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.button__search {
+  width: 139px;
+  height: 52px;
+  padding: 16px 24px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-align: right;
+}
+.button__main {
+  width: 213px;
+  height: 60px;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.07em;
+}
+
+.search {
+  margin: 0 auto;
+  position: relative;
+  max-width: 647px;
+}
+@media screen and (max-width: 576px) {
+  .search {
+    max-width: 540px;
+  }
+}
+.search__input {
+  color: #999999;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  padding: 20px 0 20px 35px;
+  width: 100%;
+}
+.search__button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search__icon {
+  position: absolute;
+  left: 24px;
+}
+
+.title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.title__header {
+  font-size: 48px;
+  line-height: 52px;
+}
+.title__nav {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .title__nav {
+    text-align: center;
+  }
+}
+.title__footer {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+.title-sub {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 8px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.title-sub--header {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.31em;
+  margin-bottom: 48px;
+}
+.title-sub--footer {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  margin-bottom: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
