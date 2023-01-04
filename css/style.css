@@ -60,7 +60,7 @@ body {
 }
 
 .header__banner {
-  background-image: url("../../images/header_background.png");
+  background-image: url("/images/header_background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -175,7 +175,7 @@ body {
 }
 
 .section-why {
-  background-image: url("../../images/why_background.jpg");
+  background-image: url("/images/why_background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -429,10 +429,10 @@ body {
   }
 }
 .booking__picture--first {
-  background-image: url("../../images/render-1477041_1280 1.png");
+  background-image: url("/images/render-1477041_1280 1.png");
 }
 .booking__picture--second {
-  background-image: url("../../images/spain-1859434_1280 1.png");
+  background-image: url("/images/spain-1859434_1280 1.png");
 }
 .booking__block--second {
   margin-left: auto;
@@ -452,7 +452,7 @@ body {
 }
 
 .review {
-  background-image: url("../../images/BG.png");
+  background-image: url("/images/BG.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
